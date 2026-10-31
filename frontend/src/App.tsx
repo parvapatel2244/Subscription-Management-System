@@ -37,6 +37,7 @@ import { CustomerProfile } from './features/portal/CustomerProfile';
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
+      staleTime: 30000, // 30s cache retention for instant tab switching
       refetchOnWindowFocus: false,
       retry: 1,
     },
