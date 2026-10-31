@@ -104,6 +104,7 @@ app.include_router(payments_router, prefix=f"{api_v1}/payments", tags=["Payments
 app.include_router(discounts_router, prefix=f"{api_v1}/discounts", tags=["Discounts"])
 app.include_router(reports_router, prefix=f"{api_v1}/reports", tags=["Reports & Analytics"])
 app.include_router(notifications_router, prefix=f"{api_v1}/notifications", tags=["Notifications"])
+app.include_router(audit_router, prefix=f"{api_v1}/audit", tags=["Audit Logs"])
 app.include_router(audit_router, prefix=f"{api_v1}/audit-logs", tags=["Audit Logs"])
 app.include_router(settings_router, prefix=f"{api_v1}/settings", tags=["System Settings"])
 

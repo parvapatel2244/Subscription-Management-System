@@ -13,4 +13,5 @@ frontend/dist/
 
 # Environment
 .env
+backend/.env
 
